@@ -6,6 +6,7 @@ node_js:
 branches:
    only:
       - master
+      - /^greenkeeper/.*$/
 
 before_script:
    - npm install -g --silent firebase-tools
@@ -15,8 +16,8 @@ script:
    - ng build --prod
 
 after-success:
-   - firebase deploy --token $FIREBASE_TOKEN --non-interective
-
+   - test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false" && firebase deploy --token $FIREBASE_TOKEN --non-interactive
+   
 notifications:
    email:
       on_failure: bangomc@gmail.com
