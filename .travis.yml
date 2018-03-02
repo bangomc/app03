@@ -1,0 +1,23 @@
+language: node_js
+
+node_js:
+   - node
+
+branches:
+   only:
+      - master
+
+before_script:
+   - npm install -g --silent firebase-tools
+   - npm install -g --silent @angular/cli
+
+script:
+   - ng build --prod
+
+after-success:
+   - firebase deploy --token $FIREBASE_TOKEN --non-interective
+
+notifications:
+   email:
+      on_failure: bangomc@gmail.com
+      on_success: bangomc@gmail.com
