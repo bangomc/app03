@@ -20,5 +20,7 @@ after_success:
    
 notifications:
    email:
-      on_failure: bangomc@gmail.com
-      on_success: bangomc@gmail.com
+      recipients: 
+         - bangomc@gmail.com
+      on_failure: change
+      on_success: always
