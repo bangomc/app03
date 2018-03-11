@@ -1,12 +1,6 @@
-# App03
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/bangomc/app03.svg)](https://greenkeeper.io/)
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
-
 ## Travis - CI
 
-[![Travis branch](https://img.shields.io/travis/bangomc/app03.svg?branch=master)]
+![Travis branch](https://img.shields.io/travis/bangomc/app03.svg?branch=master)
 
 
 ## Development server
