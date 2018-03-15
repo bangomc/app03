@@ -34,4 +34,8 @@ export class LoginComponent implements OnInit {
     );
   }
 
+  signinGoogle(){
+    this.autenticacao.signinGoogle();
+  }
+
 }
