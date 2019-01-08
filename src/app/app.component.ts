@@ -11,12 +11,12 @@ export class AppComponent implements OnInit{
 
   ngOnInit(){
     var config = {
-      apiKey: "AIzaSyB7QnKmjGnWgYzaYc9qEh_vcZWST_b60m8",
+      apiKey: "",
       authDomain: "instagramclone-api.firebaseapp.com",
       databaseURL: "https://instagramclone-api.firebaseio.com",
       projectId: "instagramclone-api",
       storageBucket: "instagramclone-api.appspot.com",
-      messagingSenderId: "621881609237"
+      messagingSenderId: ""
     };
     firebase.initializeApp(config);
   }
